@@ -28,7 +28,7 @@
 			<artifactId>spring-context</artifactId>
 			<version>4.3.1.RELEASE</version>
 		</dependency>
-
+ 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 		<dependency>
 			<groupId>org.springframework</groupId>

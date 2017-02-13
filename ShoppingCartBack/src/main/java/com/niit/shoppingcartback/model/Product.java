@@ -21,10 +21,7 @@ public class Product {
 	private String description;
 	private int product_Price;
 	private int product_Stock;
-	
 	private String supplier_Name;
-	
-	
 	private String category;
 	
 	@Transient
@@ -93,4 +90,5 @@ public class Product {
 	public void setImage(MultipartFile image) {
 		this.image = image;
 	}
+
 }

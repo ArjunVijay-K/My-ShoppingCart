@@ -2,8 +2,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ include file="/WEB-INF/views/header.jsp" %>
     
-     <%@ include file="/WEB-INF/views/header.jsp" %>
+     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -18,7 +19,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
-header {
+/* header {
 	background-color: #27A4F7;
 	color: white;
 	padding: 10px 50px 40px 50px;
@@ -42,7 +43,7 @@ button {
 
 form {
 	color: white;
-}
+} */
 </style>
 </head>
 <body>

@@ -47,9 +47,9 @@ public class ProductDAOimpl implements ProductDAO {
 	}
 
 		@Transactional
-	public Product get(String _Id) {
+	public Product get(String Id) {
 		// TODO Auto-generated method stub
-			String hql = "from Product where product_Id ='" + _Id + "'";
+			String hql = "from Product where product_Id ='" + Id + "'";
 			Query query = (Query) sessionFactory.getCurrentSession().createQuery(hql);
 			@SuppressWarnings("unchecked")
 			List<Product> listProduct = (List<Product>) (query).list();

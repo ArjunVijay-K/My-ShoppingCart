@@ -113,17 +113,6 @@ public String editProduct(@ModelAttribute Product product){
 		return "redirect:/viewProduct";
 }
 
-@RequestMapping ("/productDetails/{id}")
-public ModelAndView productDetails(@PathVariable("id") String id){
-	ModelAndView mv = new ModelAndView("productDetails");
-	Product product = productDAO.get(id);
-	mv.addObject("product",product );
-	mv.addObject("userloggedin",true );
-	
-	mv.addObject("isProductClicked", true);
-	
-	
-	return mv;
-}
+
 
 }

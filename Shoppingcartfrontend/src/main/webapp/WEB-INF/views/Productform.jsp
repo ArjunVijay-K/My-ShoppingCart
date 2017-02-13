@@ -6,6 +6,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Product</title>
+<script>
+	function productForm() {
+		// Make quick references to our fields
+		var productname = document.getElementById('product_Name');
+		var description = document.getElementById('description');
+		var category = document.getElementById('category');
+		var supplier = document.getElementById('supplier_Name')
+		var stock = document.getElementById('product_Stock')
+		var price = document.getElementById('product_Price');
+		var file = document.getElementById('file');
+		// Check each input in the order that it appears in the form!
+		if (notEmpty(productname, " Enter a name for the product!!")) {
+	   if (notEmpty(description, "Give a small discription about the product!!")) {
+				if (notEmpty(stock, "Enter the stock of the product!!")) {
+				if (notEmpty(price, "Enter the price of the product!!")) {
+										
+										return true;
+									}
+								}
+						}		
+		}
+		return false;
+	}
+
+	function notEmpty(elem, helperMsg) {
+		if (elem.value.length == 0) {
+			alert(helperMsg);
+			elem.focus(); // set the focus to this input
+			return false;
+		}
+		return true;
+	}
+	
+	
+	
+</script>
+
 </head>
 <body>
 
@@ -14,7 +51,7 @@
 			
 			<h3 align="center" style="color: #27A4F7">Add a new product</h3>
 
-			<form action="newproduct"class="form-horizontal"  method="post" enctype="multipart/form-data"  role="form" name="newproduct">
+			<form action="newproduct"class="form-horizontal"  method="post" enctype="multipart/form-data"  role="form" name="newproduct" onsubmit="return productForm()">
 				<div style="color: #27A4F7" class="form-group">
 					<label for="text">Name :</label> 
 					<input class="form-control" placeholder="Enter the name of the product" type="text"  id="product_Name" name="product_Name" >

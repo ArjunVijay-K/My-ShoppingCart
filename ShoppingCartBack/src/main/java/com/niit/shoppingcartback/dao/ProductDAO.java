@@ -10,12 +10,16 @@ public List<Product> list();
 	
 	public List<Product> list(String category);
 	
-	public Product get(String product_Id);
+	public Product get(String productId);
 	
 	public void saveOrUpdate(Product product);
 	
 	public void delete(String product_Id);
 	
 	public List<Product> search(String keyWord);
+
+	
+
+	
 
 }

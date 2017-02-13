@@ -22,6 +22,13 @@
 button {
 	color: #27A4F7;
 }
+body{background-image: linear-gradient(rgb(104, 136, 162), rgb(12, 97, 33));}
+.jumbotron{
+color:#0A0F32;
+width:45em; 
+position:relative;
+top:2em;
+left:15em;}
 </style>
 
 <script>
@@ -44,7 +51,7 @@ button {
 								if (isNumeric(mobilenumber, "Please enter only numbers for PhoneNumber")) {
 									if (notEmpty(address, "address Should not be empty")) {
 										if (password!=confirmpassword()){
-											alert("Password do not match.");
+											alert("Password is incorrect!");
 											return false;
 										}
 
@@ -114,19 +121,19 @@ button {
 
 
 </head>
-<body>
+<body >
 
 
 
 
-	<div class="container" style="color: #1F618D">
+	<div class="container" style="color: #2E4053">
 		<div class="jumbotron" style="background-color: #EAECEE">
 
 			<h3 align="center">Create your account</h3>
 
 			<form class="form-horizontal" method="post" action="newUser"
 				onsubmit="return formRegister()" role="form" name="form">
-				<div style="color: #27A4F7" class="form-group">
+				<div style="color: #424949" class="form-group">
 					<label for="email">Username:</label> <input class="form-control"
 						placeholder="Enter your User name" type="text" id="username"
 						name="username">
@@ -134,30 +141,30 @@ button {
 
 
 
-				<div style="color: #27A4F7" class="form-group">
+				<div style="color: #424949" class="form-group">
 					<label for="email">Email id:</label> <input type="text"
 						name="emailid" class="form-control" id="email"
 						placeholder="Enter your email id">
 				</div>
 
-				<div style="color: #27A4F7" class="form-group">
+				<div style="color: #424949" class="form-group">
 					<label for="psw">Password:</label> <input type="password"
 						name="password" class="form-control" id="password"
 						placeholder="Enter your password"  />
 				</div>
 
-				<div style="color: #27A4F7" class="form-group">
+				<div style="color: #424949" class="form-group">
 					<label for="cmpsw">Confirm Password:</label> <input type="password"
 						class="form-control" id="confirmpassword" placeholder="confirm password">
 				</div>
 
-				<div style="color: #27A4F7" class="form-group">
+				<div style="color: #424949" class="form-group">
 					<label for="Mobile">Mobile Number:</label> <input type="text"
 						name="mobilenumber" class="form-control" id="mobilenumber"
 						placeholder="Enter your Mobile number">
 				</div>
 
-				<div style="color: #27A4F7" class="form-group">
+				<div style="color: #424949" class="form-group">
 					<label for="Address">Address:</label>
 					<textarea rows="4" cols="50" name="address" class="form-control" id="address" placeholder="Enter your address"></textarea>
 				</div>

@@ -43,21 +43,25 @@ public class UserController {
 			@RequestParam(value = "logout", required = false) String logout ) {
 		
 		
-	String username = p.getName();
-		UserRole userRole = userRoleDAO.get(username);
+	String emailid = p.getName();
+		UserRole userRole = userRoleDAO.get(emailid);
+		String name = userRole.getUsername();
 	String role = userRole.getRole();
-		
-	
-	
+		User user = userDAO.getByEmail(emailid);
+		 model.addAttribute("user", user);
+	model.addAttribute("userId", user.getUsersId());
 	if(role.equals("ROLE_USER")){
 			 List<Product> productList = productDAO.list();
 			 model.addAttribute("productList", productList);
+			 model.addAttribute("name", name);
 			 model.addAttribute("userloggedin", true);
 			 return "userlogin";
 		
 	}
 	else if(role.equals("ROLE_ADMIN")){
 			 model.addAttribute("adminloggedin", true);
+			 model.addAttribute("name", name);
+			 
 			 return "adminlogin";
 			 
 	}

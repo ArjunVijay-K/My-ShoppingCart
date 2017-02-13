@@ -88,7 +88,7 @@ public boolean isValidUser(String emailid, String password, boolean b) {
 public boolean isAllReadyRegister(String email, boolean b) {
 	
 	String hql = "from User where emailid ='"+ email +"'";
-			
+ 			
 				
 	org.hibernate.Query query = sessionFactory.getCurrentSession().createQuery(hql);
 	@SuppressWarnings("unchecked")

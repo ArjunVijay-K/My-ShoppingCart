@@ -14,12 +14,24 @@
 
 
 <style>
-header {
-	background-color: #27A4F7;
-	color: white;
-	/* height:10em; */
-	
+
+p {
+	position: fixed;
+	top: 250px;
+	right: 10px;
+	width: 700px;
 }
+
+.title{;
+       top:50px;
+        left:15px;}
+
+header {
+	background-color:#0A0F32 ;
+	color: white;
+	width: 1380px;
+	height: 150px;
+	}
 
 body {
 	background-color: white;
@@ -30,21 +42,18 @@ button {
 	color: #27A4F7;
 	width: 180px;
 }
-
-.carousel-inner>.item>img {
-	width: 1500px;
-	height: 400px;
+form {
+	color: white;
 	
 }
 
-form {
-	color: white;
-}
+
 .sub-menu-parent {
+
 	position: relative;
-	right: 10em;
-	bottom: 5px;
-}
+	right: 6em;
+	top: 80px;
+	}
 
 .sub-menu {
 	visibility: hidden; /* hides sub-menu */
@@ -52,7 +61,7 @@ form {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	width: 120%;
+	width: 125%;
 	transform: translateY(-2em);
 	z-index: -1;
 	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index
@@ -60,144 +69,24 @@ form {
 }
 
 .sub-menu-parent:hover .sub-menu {
-	visibility: visible; /* shows sub-menu */
+	visibility: visible; 
 	opacity: 1;
 	z-index: 1;
 	transform: translateY(0%);
 	transition-delay: 0s, 0s, 0.3s;
+	}
 	
-	/* this removes the transition delay so the menu will be visible while the other styles transition */
-}
-
-#search-form_3 {
-	background: #e1e1e1; /* Fallback color for non-css3 browsers */
-	width: 530px;
-	margin: 10px auto;
-	/* Gradients */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(243,
-		243, 243)), color-stop(1, rgb(225, 225, 225)));
-	background: -moz-linear-gradient(center top, rgb(243, 243, 243) 0%,
-		rgb(225, 225, 225) 100%);
-	/* Rounded Corners */
-	border-radius: 17px;
-	-webkit-border-radius: 17px;
-	-moz-border-radius: 17px;
-	/* Shadows */
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, .3), 0 0 2px rgba(0, 0, 0, .3);
-	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .3), 0 0 2px
-		rgba(0, 0, 0, .3);
-	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .3), 0 0 2px
-		rgba(0, 0, 0, .3);
-}
-
-/*** TEXT BOX ***/
-.search_3 {
-	background: #fafafa; /* Fallback color for non-css3 browsers */
-	color: black;
-	align:center;
-	text-align:center;
-	/* Gradients */ background : -webkit-gradient( linear, left bottom,
-	left top, color-stop( 0, rgb( 250, 250, 250)), color-stop( 1, rgb( 230,
-	230, 230)));
-	background: -moz-linear-gradient(center top, rgb(250, 250, 250) 0%,
-		rgb(230, 230, 230) 100%);
-	border: 0;
-	border-bottom: 1px solid #fff;
-	border-right: 1px solid rgba(255, 255, 255, .8);
-	/* align:center; */	
-	font-size: 15px;
-	margin: 4px;
-	height: 35px;
-	/* padding: 5px; */
-	width: 430px;
+	body {
 	
-	/* Rounded Corners */
-	border-radius: 17px;
-	-webkit-border-radius: 17px;
-	-moz-border-radius: 17px;
-	/* Shadows */
-	box-shadow: -1px -1px 2px rgba(0, 0, 0, .3), 0 0 1px rgba(0, 0, 0, .2);
-	-webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, .3), 0 0 1px
-		rgba(0, 0, 0, .2);
-	-moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, .3), 0 0 1px
-		rgba(0, 0, 0, .2);
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(250,
-		250, 250)), color-stop(1, rgb(230, 230, 230)))
-}
-
-/*** USER IS FOCUSED ON TEXT BOX ***/
-.search_3:focus {
-	outline: none;
-	background: #fff; /* Fallback color for non-css3 browsers */
-	/* Gradients */
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(255,
-		255, 255)), color-stop(1, rgb(235, 235, 235)));
-	background: -moz-linear-gradient(center top, rgb(255, 255, 255) 0%,
-		rgb(235, 235, 235) 100%);
-}
-
-/*** SEARCH BUTTON ***/
-.submit_3 {
-	background: #27A4F7; /* Fallback color for non-css3 browsers */
-	/* Gradients */
-	/* background: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgb(79,188,32)), color-stop(0.15, rgb(73,157,34)), color-stop(0.88, rgb(62,135,28)), color-stop(1, rgb(49,114,21)));
-background: -moz-linear-gradient( center top, rgb(79,188,32) 0%, rgb(73,157,34) 15%, rgb(62,135,28) 88%, rgb(49,114,21) 100%); */
-	border: 0;
-	color: #eee;
-	cursor: pointer;
-	float: right;
-	font: 16px 'Raleway', sans-serif;
-	font-weight: bold;
-	height: 33px;
-	margin: 4px 4px 0;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-	width: 84px;
-	outline: none;
-	/* Rounded Corners */
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	/* Shadows */
-	box-shadow: -1px -1px 1px rgba(255, 255, 255, .5), 1px 1px 0
-		rgba(0, 0, 0, .4);
-	-moz-box-shadow: -1px -1px 1px rgba(255, 255, 255, .5), 1px 1px 0
-		rgba(0, 0, 0, .2);
-	-webkit-box-shadow: -1px -1px 1px rgba(255, 255, 255, .5), 1px 1px 0
-		rgba(0, 0, 0, .4);
-}
-/*** SEARCH BUTTON HOVER ***/
-.submit_3:hover {
-	background: #4ea923; /* Fallback color for non-css3 browsers */
-	/* Gradients */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(89,
-		222, 27)), color-stop(0.15, rgb(83, 179, 38)),
-		color-stop(0.8, rgb(66, 143, 27)), color-stop(1, rgb(54, 120, 22)));
-	background: -moz-linear-gradient(center top, rgb(89, 222, 27) 0%,
-		rgb(83, 179, 38) 15%, rgb(66, 143, 27) 80%, rgb(54, 120, 22) 100%);
-}
-
-.submit_3:active {
-	background: #4ea923; /* Fallback color for non-css3 browsers */
-	/* Gradients */
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(89,
-		222, 27)), color-stop(0.15, rgb(83, 179, 38)),
-		color-stop(0.8, rgb(66, 143, 27)), color-stop(1, rgb(54, 120, 22)));
-	background: -moz-linear-gradient(center bottom, rgb(89, 222, 27) 0%,
-		rgb(83, 179, 38) 15%, rgb(66, 143, 27) 80%, rgb(54, 120, 22) 100%);
-}
-
-/* presentational */
-body {
-	
-	font: 18px/2 sans-serif;
-
+/* 	font: 18px/2 sans-serif; */
+    
 }
 
 nav a {
-	color: #2A4B70;
-	display: block;
-	padding: 1em 1.5em;
-	text-decoration: none;
+	color: white;
+	display: block; 
+	 padding: 1em 1.5em; 
+	 text-decoration: none; 
 	
 }
 
@@ -208,13 +97,13 @@ nav a:hover {
 
 nav ul, nav ul li {
 	list-style-type: none;
- padding: 0em;
+    padding: 0em;
 	margin: 0em; 
-	text-align:left;
+	text-align:center;
 } 
 
 nav>ul {
-	background: #27A4F7;
+	
 	text-align: center;
 }
 
@@ -228,11 +117,10 @@ nav>ul>li:first-child {
 }
 
 .sub-menu {
-	background: white;
-	color: #2A4B70;
+	background: #0A0F32;
+	color: white;
 	align:center;
 	text-align: center;
-
 
 </style>
 </head>
@@ -241,11 +129,11 @@ nav>ul>li:first-child {
 
 
 
-			<a  align="left" style="font-family: Comic Sans MS, Comic Sans, cursive; color: #2A4B70; font-size: 25px;"
+			<a position="static" align="left" style="font-family: Comic Sans MS, Comic Sans, cursive; color: #27A4F7; font-size: 25px;"
 				class="navbar-brand" href="home"><b>Electromart</b> </a>
 	
 
-		<div align="right" style="position: relative; top: 15px;right:1em ">
+		<div align="right" style="position: fixed; top: 15px;right:2em ">
 			<c:if test="${pageContext.request.userPrincipal.name == null }">
 				<a href="getregistration" style="color: white"><span
 					class="glyphicon glyphicon-user"></span> Signup </a>
@@ -255,9 +143,9 @@ nav>ul>li:first-child {
 
 
 			<c:if
-				test="${pageContext.request.userPrincipal.name != 'arjunvijay' && pageContext.request.userPrincipal.name !=null }">
+				test="${pageContext.request.userPrincipal.name != 'admin@gmail.com' && pageContext.request.userPrincipal.name !=null }">
 
-				<a style="color: white" href="#"><span
+				<a style="color: white" href="viewcart"><span
 					class="glyphicon glyphicon-shopping-cart">Cart</span></a>
 
 			</c:if>
@@ -271,9 +159,13 @@ nav>ul>li:first-child {
 
 			</c:if>
 		</div>
-<div style="position:relative;top:3em;">
+		<br>
+		<c:if test="${pageContext.request.userPrincipal.name != null }">
+		<p class="title">Welcome, ${pageContext.request.userPrincipal.name}</p>
+		</c:if>
+
 		<c:if
-			test="${pageContext.request.userPrincipal.name =='arjun@gmail.com' }">
+			test="${pageContext.request.userPrincipal.name =='admin@gmail.com' }">
 			<nav>
 				<ul >
 					<li class="sub-menu-parent"><a style="color:white; text-align: center;" href="#">Category</a>
@@ -290,7 +182,7 @@ nav>ul>li:first-child {
 
 					<li class="sub-menu-parent"><a style="color: white" href="#">Supplier</a>
 						<ul class="sub-menu">
-							<li><a href="Supplier">New Supplier</a></li>
+							<li><a href="Supplierform">New Supplier</a></li>
 							<li><a href="viewSupplier">View Supplier</a></li>
 						</ul></li>
 
@@ -303,7 +195,7 @@ nav>ul>li:first-child {
 		<a> </a>
 
 		<c:if
-			test="${pageContext.request.userPrincipal.name != 'arjun@gmail.com' && pageContext.request.userPrincipal.name !=null || pageContext.request.userPrincipal.name ==null }">
+			test="${pageContext.request.userPrincipal.name != 'admin@gmail.com' && pageContext.request.userPrincipal.name !=null || pageContext.request.userPrincipal.name ==null }">
 
 			<nav>
 				<ul >
@@ -359,15 +251,13 @@ nav>ul>li:first-child {
 
 
 		</c:if>
-		</div>
-		<c:if
-			test="${pageContext.request.userPrincipal.name != 'arjun@gmail.com' && pageContext.request.userPrincipal.name !=null || pageContext.request.userPrincipal.name ==null }">
 		
-		<form    style="position: relative; bottom: 5em; align:right;"
-						id="search-form_3">
-						<input placeholder="search for your item here.." type="text" text-align="center" class="search_3" /> <input type="submit"
-							class="submit_3" value="Search" />
-					</form>
+		<c:if
+			test="${pageContext.request.userPrincipal.name != 'admin@gmail.com' && pageContext.request.userPrincipal.name !=null || pageContext.request.userPrincipal.name ==null }">
+		
+
+
+
 					</c:if>
 
 

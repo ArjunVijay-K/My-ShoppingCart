@@ -19,10 +19,10 @@ public class UserRoleDAOimpl implements UserRoleDAO {
 	private SessionFactory sessionFactory;
 	
 	@Transactional
-	public UserRole get(String username) {
+	public UserRole get(String emailid) {
 		
 		
-		String hql = "from UserRole where username ='"+ username +"'";
+		String hql = "from UserRole where emailid ='"+ emailid +"'";
 		org.hibernate.Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		@SuppressWarnings("unchecked")
 		List<UserRole> listUser = (List<UserRole>) query.list();
